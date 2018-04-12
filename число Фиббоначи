@@ -1,0 +1,8 @@
+//Дано число n (n > 1). Верните из функции n-ное число Фиббоначи
+
+function testCycle(n) {    
+    return (n<2) ? n : testCycle(n-1) + testCycle(n-2);
+}
+
+// Sample Input :4
+// Sample Output :3
