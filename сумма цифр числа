@@ -1,0 +1,15 @@
+//Дано число n. Найдите сумму его цифр. 
+
+function testCycle(n) {
+    var x = 0;
+    var textTypeOfNumber = n.toString();
+    //var first = textTypeOfNumber[2];
+    for (var i = 0; i < textTypeOfNumber.length; i++) {
+        x += +textTypeOfNumber[i]; //its also possible like this
+        x += Number(textTypeOfNumber[i]);
+    }
+    return x;
+}
+
+// Sample Input :2260
+// Sample Output :10
