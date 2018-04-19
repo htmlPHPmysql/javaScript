@@ -9,9 +9,9 @@ function testArray(a, b) {
     }
     
     for (key in b) {
-        if (b.hasOwnProperty(key) && String(parseInt(key, 10)) === key) {
+        
             result += b[key];
-        }
+        
     }
     return result;
 }
