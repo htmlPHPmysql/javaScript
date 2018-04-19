@@ -1,0 +1,20 @@
+//В этом задании в нашу функцию testArray передаются два массива случайной длины заполненные случайными числами. Вам нужно сосчитать сумму всех элементов обоих массивов и возвратить ее из функции.
+
+function testArray(a, b) {
+    var result = 0;
+    for (key in a) {
+        if (a.hasOwnProperty(key) && String(parseInt(key, 10)) === key) {
+            result += a[key];
+        }
+    }
+    
+    for (key in b) {
+        if (b.hasOwnProperty(key) && String(parseInt(key, 10)) === key) {
+            result += b[key];
+        }
+    }
+    return result;
+}
+
+// Sample Input:[8, 1, 1, 7, 4, 0]  [5, 8, 5, 4, 8]
+// Sample Output:51
